@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PBB-P2 Dijelaskan: UU 1/2022 HKPD</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero"><div class="w">
+<div class="chips" style="margin-bottom:22px"><span class="chip">UU No. 1 Tahun 2022</span><span class="chip">Pasal 38–43</span><span class="chip">Pajak daerah</span></div>
+<h1>Pajak rumah dan tanah, <span>dihitung dengan jelas</span></h1>
+<p>Ringkasan PBB-P2 (Pajak Bumi dan Bangunan Perdesaan dan Perkotaan) menurut UU HKPD, lengkap dengan kalkulator yang bisa Anda coba langsung.</p>
+</div>
+<svg class="sky" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path fill="#ffffff14" d="M0 90V50h60V30h50v25h40V10h60v45h50V35h70v20h40V20h55v40h60V40h80V15h50v45h60V30h70v25h60V45h90V25h60v35h60V50h60v40z"/><path fill="var(--bg)" d="M0 90V72h90V58h70v14h110V62h80v10h160V56h60v16h140V60h90v12h120V58h70v14h110V64h90v26z"/></svg>
+</header>
+
+<div class="w">
+<div class="calc" id="kalkulator">
+<h2>Kalkulator PBB-P2</h2>
+<p class="sub">Isi angka dari SPPT atau perda daerah Anda. Hasil berubah otomatis.</p>
+<div class="f">
+<div><label for="njop">NJOP bumi + bangunan (Rp)</label><input id="njop" inputmode="numeric" value="800.000.000"></div>
+<div><label for="tkp">NJOPTKP (Rp)</label><input id="tkp" inputmode="numeric" value="50.000.000"></div>
+<div class="row2">
+<div><label for="njkp">NJKP (%), 20–100</label><input id="njkp" inputmode="decimal" value="40"></div>
+<div><label for="tarif">Tarif (%), maks. 0,5</label><input id="tarif" inputmode="decimal" value="0,2"></div>
+</div></div>
+<div class="out" aria-live="polite">
+<div class="st"><span>NJOP setelah NJOPTKP</span><b id="o1"></b></div>
+<div class="st"><span>Dasar pengenaan</span><b id="o2"></b></div>
+<div class="big"><small>PBB-P2 terutang per tahun</small><span id="o3"></span></div>
+<div id="o4" style="font-size:13px;color:#ffb020"></div>
+</div></div></div>
+
+<nav><div class="w" id="nv">
+<a href="#dasar">Dasar hukum</a><a href="#objek">Objek</a><a href="#subjek">Subjek</a><a href="#njop">NJOP, NJOPTKP, NJKP</a><a href="#tarif">Tarif</a><a href="#hitung">Hitungan</a><a href="#ubah">Perubahan</a><a href="#p3">PBB-P2 vs P3</a><a href="#sumber">Sumber</a>
+</div></nav>
+
+<main class="w">
+<div class="callout"><b>Catatan:</b> disusun dengan kata-kata sendiri dari berbagai sumber publik. Angka contoh hanya ilustrasi. Tarif, NJOPTKP, dan NJKP sebenarnya ditetapkan perda/perkada tiap kabupaten/kota, jadi selalu cek aturan daerah Anda.</div>
+
+<section id="dasar"><span class="k">Dasar hukum</span><h2 class="t">Apa itu PBB-P2?</h2>
+<p>PBB-P2 adalah pajak atas bumi dan/atau bangunan yang dimiliki, dikuasai, dan/atau dimanfaatkan orang pribadi atau badan (Pasal 1 angka 33 UU 1/2022). Pajak ini dipungut dan diadministrasikan pemerintah kabupaten/kota, sehingga hasilnya menjadi Pendapatan Asli Daerah (PAD).</p>
+<div class="tl">
+<div><b>Sebelum 2010</b><br>PBB dikelola pemerintah pusat.</div>
+<div><b>UU No. 28 Tahun 2009 (UU PDRD)</b><br>PBB perdesaan dan perkotaan dialihkan menjadi pajak daerah.</div>
+<div><b>5 Januari 2022: UU No. 1 Tahun 2022</b><br>Menggantikan UU PDRD dan mengatur PBB-P2 dalam Pasal 38 sampai 43.</div>
+</div>
+<div class="pas"><span><b>Pasal 38</b> Objek</span><span><b>Pasal 39</b> Subjek dan wajib pajak</span><span><b>Pasal 40</b> NJOP, NJOPTKP, NJKP</span><span><b>Pasal 41</b> Tarif</span></div>
+<p style="margin-top:14px">Aturan teknis lebih lanjut ada di peraturan pelaksanaan UU HKPD serta perda dan perkada tiap daerah.</p></section>
+
+<section id="objek"><span class="k">Objek</span><h2 class="t">Apa yang kena pajak, apa yang tidak</h2>
+<p>Objek PBB-P2 adalah bumi dan/atau bangunan yang dimiliki, dikuasai, atau dimanfaatkan orang pribadi atau badan. Kawasan perkebunan, perhutanan, dan pertambangan dikecualikan karena dipungut pemerintah pusat (PBB-P5L).</p>
+<div class="grid g2">
+<div class="card yes"><h3>Objek pajak</h3><ul><li>Rumah</li><li>Apartemen</li><li>Hotel</li><li>Pabrik</li><li>Sawah</li><li>Tanah kosong</li></ul></div>
+<div class="card no"><h3>Dikecualikan</h3><ul>
+<li>Dipakai pemerintah pusat dan daerah untuk penyelenggaraan pemerintahan</li>
+<li>Pelayanan umum nirlaba: ibadah, kesehatan, pendidikan, sosial, kebudayaan nasional</li>
+<li>Pemakaman, peninggalan purbakala, atau yang sejenis</li>
+<li>Hutan lindung, suaka alam, hutan wisata, taman nasional, tanah penggembalaan desa, tanah negara yang belum dibebani hak</li>
+<li>Perwakilan diplomatik dan konsulat (asas timbal balik)</li>
+<li>Lembaga internasional sesuai ketentuan PMK</li></ul></div></div></section>
+
+<section id="subjek"><span class="k">Subjek</span><h2 class="t">Siapa yang membayar</h2>
+<p>Subjek pajak adalah orang pribadi atau badan yang secara nyata mempunyai hak atas bumi dan/atau memperoleh manfaat atas bumi, dan/atau memiliki, menguasai, atau memperoleh manfaat atas bangunan. Subjek pajak yang memenuhi syarat menjadi wajib pajak, yaitu pihak yang wajib membayar PBB-P2.</p></section>
+
+<section id="njop"><span class="k">Dasar pengenaan</span><h2 class="t">NJOP, NJOPTKP, dan NJKP</h2>
+<div class="grid g3">
+<div class="card"><div class="letter" style="background:var(--blue)">NJOP</div><h3>Nilai Jual Objek Pajak</h3><p>Harga rata-rata transaksi jual beli yang wajar. Tanpa transaksi, ditentukan lewat perbandingan objek sejenis, nilai perolehan baru, atau NJOP pengganti.</p><p>Ditetapkan kepala daerah menurut keadaan 1 Januari, ditinjau tiap 3 tahun (objek tertentu bisa tiap tahun).</p><p><b>Bumi:</b> lokasi, peruntukan, pemanfaatan, kondisi lingkungan.<br><b>Bangunan:</b> bahan, lokasi, rekayasa, kondisi sekitar.</p></div>
+<div class="card"><div class="letter" style="background:var(--mint)">TKP</div><h3>NJOP Tidak Kena Pajak</h3><p>Batas nilai yang tidak dikenai pajak, besarnya ditetapkan daerah.</p><p>Bila wajib pajak punya lebih dari satu objek di satu kabupaten/kota, NJOPTKP hanya diberikan untuk satu objek per tahun pajak.</p></div>
+<div class="card"><div class="letter" style="background:var(--amber);color:#0e1f4d">NJKP</div><h3>Nilai Jual Kena Pajak</h3><p>Disebut juga assessment ratio: persentase dari NJOP (setelah NJOPTKP) yang jadi dasar pengenaan. Rentangnya 20% sampai 100%, ditetapkan perda.</p><p>Fungsinya meredam lonjakan pajak akibat perubahan tarif atau pemutakhiran NJOP, dan memungkinkan pembedaan kategori, misalnya komersial dan hunian.</p></div></div></section>
+
+<section id="tarif"><span class="k">Tarif</span><h2 class="t">Batas tarif naik jadi 0,5%</h2>
+<div class="bar"><span>UU PDRD (lama)</span><i style="width:60%;background:var(--mute)">maks. 0,3%</i></div>
+<div class="bar"><span>UU HKPD (baru)</span><i style="width:100%;background:var(--blue)">maks. 0,5%</i></div>
+<ul><li>Tarif untuk lahan produksi pangan dan ternak ditetapkan lebih rendah daripada lahan lainnya.</li>
+<li>Tarif sebenarnya ditetapkan perda, sehingga berbeda antardaerah dan antarkategori objek (misalnya berdasarkan rentang NJOP).</li></ul></section>
+
+<section id="hitung"><span class="k">Cara menghitung</span><h2 class="t">Dua langkah, dua rumus</h2>
+<div class="flow"><b>NJOP</b><em>−</em><b>NJOPTKP</b><em>×</em><b>NJKP</b><em>=</em><b style="background:var(--blue)">Dasar pengenaan</b></div>
+<div class="flow"><b style="background:var(--blue)">Dasar pengenaan</b><em>×</em><b>Tarif</b><em>=</em><b style="background:var(--mint);color:#0e1f4d">PBB-P2 terutang</b></div>
+<p>Tahun pajak PBB-P2 adalah 1 tahun kalender.</p>
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-t="c1">Contoh 1: rumah tinggal</button><button role="tab" aria-selected="false" data-t="c2">Contoh 2: badan usaha</button></div>
+<div id="c1"><p>NJOP bumi dan bangunan Rp800.000.000; NJOPTKP Rp50.000.000; NJKP 40%; tarif 0,2%. (Angka ilustrasi.)</p>
+<div class="tw"><table><tr><th>Langkah</th><th>Perhitungan</th><th class="r">Hasil</th></tr>
+<tr><td>NJOP setelah NJOPTKP</td><td>800.000.000 − 50.000.000</td><td class="r">Rp750.000.000</td></tr>
+<tr><td>Dasar pengenaan</td><td>750.000.000 × 40%</td><td class="r">Rp300.000.000</td></tr>
+<tr class="tot"><td>PBB-P2 terutang</td><td>300.000.000 × 0,2%</td><td class="r">Rp600.000</td></tr></table></div></div>
+<div id="c2" hidden><p>Tanah 2.000 m² (NJOP Rp6.000.000/m²), bangunan 900 m² (NJOP Rp1.000.000/m²); NJOPTKP diasumsikan Rp10.000.000; NJKP 60%; tarif 0,3%. (Angka ilustrasi.)</p>
+<div class="tw"><table><tr><th>Langkah</th><th>Perhitungan</th><th class="r">Hasil</th></tr>
+<tr><td>NJOP bumi</td><td>2.000 × 6.000.000</td><td class="r">Rp12.000.000.000</td></tr>
+<tr><td>NJOP bangunan</td><td>900 × 1.000.000</td><td class="r">Rp900.000.000</td></tr>
+<tr><td>Total NJOP</td><td>12.000.000.000 + 900.000.000</td><td class="r">Rp12.900.000.000</td></tr>
+<tr><td>NJOP setelah NJOPTKP</td><td>12.900.000.000 − 10.000.000</td><td class="r">Rp12.890.000.000</td></tr>
+<tr><td>Dasar pengenaan</td><td>12.890.000.000 × 60%</td><td class="r">Rp7.734.000.000</td></tr>
+<tr class="tot"><td>PBB-P2 terutang</td><td>7.734.000.000 × 0,3%</td><td class="r">Rp23.202.000</td></tr></table></div></div>
+<div class="warn"><b>Awas rumus lama.</b> Sebagian artikel populer, terutama yang terbit sekitar 2022 atau sebelumnya, masih memakai skema lama (NJKP otomatis 20%/40%, atau tanpa NJKP). Pakai rumus UU HKPD di atas dan angka dari perda daerah Anda.</div></section>
+
+<section id="ubah"><span class="k">Perubahan</span><h2 class="t">Dari UU PDRD ke UU HKPD</h2>
+<div class="tw"><table><tr><th>Aspek</th><th>UU 28/2009 (PDRD)</th><th>UU 1/2022 (HKPD)</th></tr>
+<tr><td>Tarif maksimal</td><td>0,3%</td><td class="new">0,5%; lahan pangan dan ternak lebih rendah</td></tr>
+<tr><td>Dasar pengenaan</td><td>NJOP setelah NJOPTKP</td><td class="new">NJOP setelah NJOPTKP, dikali NJKP 20%–100% (perda)</td></tr>
+<tr><td>NJOPTKP</td><td>Tidak ada pembatasan pemberian per wajib pajak</td><td class="new">Hanya untuk satu objek per kab/kota per tahun</td></tr>
+<tr><td>Penetapan NJOP</td><td>Kepala daerah, tiap 3 tahun</td><td class="new">Kepala daerah lewat perkada, tiap 3 tahun, mendorong pemutakhiran rutin</td></tr>
+<tr><td>Tujuan</td><td>Pengalihan ke pajak daerah</td><td class="new">Penguatan PBB-P2 sebagai sumber PAD, dengan peredam kenaikan beban (NJKP, transisi NJOP)</td></tr></table></div></section>
+
+<section id="p3"><span class="k">Perbandingan</span><h2 class="t">PBB-P2 vs PBB-P3</h2>
+<div class="grid g2 vs">
+<div class="card"><h3>PBB-P2</h3><dl><dt>Objek</dt><dd>Bumi dan bangunan perdesaan dan perkotaan</dd><dt>Pemungut</dt><dd>Pemerintah kabupaten/kota</dd><dt>Tarif</dt><dd>Maks. 0,5%, ditetapkan perda</dd><dt>Penerima hasil</dt><dd>PAD kabupaten/kota</dd></dl></div>
+<div class="card"><h3>PBB-P3 (P5L)</h3><dl><dt>Objek</dt><dd>Kawasan perkebunan, perhutanan, pertambangan, dan sektor lain</dd><dt>Pemungut</dt><dd>Pemerintah pusat</dd><dt>Tarif</dt><dd>Tarif tunggal 0,5%</dd><dt>Penerima hasil</dt><dd>Sesuai ketentuan pusat dan daerah</dd></dl></div></div></section>
+
+<section id="sumber"><span class="k">Rujukan</span><h2 class="t">Jurnal dan sumber</h2>
+<h3 style="margin:8px 0 12px">Jurnal dan karya ilmiah</h3>
+<div class="grid g2 src">
+<a href="https://jurnal-akuntansi.polban.ac.id/iarj/article/download/47/50/419">Pengaruh Penerimaan PBB-P2 dan BPHTB terhadap penerimaan pajak daerah Kota Bandung, IARJ, 2020<small>jurnal-akuntansi.polban.ac.id</small></a>
+<a href="https://jurnal.fe.unram.ac.id/index.php/konstanta/article/download/1105/557/5157">Potensi dan kontribusi PBB-P2 terhadap PAD Kota Mataram, Jurnal Konstanta, 2024<small>jurnal.fe.unram.ac.id</small></a>
+<a href="https://ejurnal.ulbi.ac.id/index.php/jurnalland/article/download/713/538">Faktor demografis dan PDRB terhadap realisasi PBB-P2 di 18 kabupaten Jawa Barat<small>ejurnal.ulbi.ac.id</small></a>
+<a href="https://ojs.stiami.ac.id/index.php/JUMAIP/article/download/4203/2161">Efektivitas pemungutan PBB-P2 di UPPPD Kecamatan Ciracas, Jakarta Timur, 2024<small>ojs.stiami.ac.id</small></a>
+<a href="https://journal.feb.unmul.ac.id/index.php/JIAM/article/download/13751/3011/33807">Penerimaan PBB-P2 dalam meningkatkan PAD Kota Tegal, JIAM, 2024<small>journal.feb.unmul.ac.id</small></a>
+<a href="https://garuda.kemdiktisaintek.go.id/documents/detail/3263913">Pemungutan PBB-P2 terhadap PAD Kabupaten Klaten, 2022<small>garuda.kemdiktisaintek.go.id</small></a>
+<a href="https://ojs.batangkab.go.id/index.php/ristek/article/download/210/277">Optimalisasi pemungutan PBB-P2 di Kecamatan Banyuputih, Kabupaten Batang<small>ojs.batangkab.go.id</small></a>
+<a href="https://journal.stialanmakassar.ac.id/index.php/jurnal_administrasi_negara/article/download/1247/93">Kendala pemungutan PBB-P2 di Mamuju Tengah, Jurnal Administrasi Negara<small>journal.stialanmakassar.ac.id</small></a></div>
+<h3 style="margin:26px 0 12px">Sumber non-jurnal</h3>
+<div class="grid g2 src">
+<a href="https://djpk.kemenkeu.go.id/wp-content/uploads/2024/09/SERASI-12-MATERI.pdf">Materi Kemenkeu (DJPK): penguatan PBB-P2 dalam UU HKPD<small>djpk.kemenkeu.go.id</small></a>
+<a href="https://ortax.org/subjek-pilihan/11/ketentuan-pbb-p2-dalam-uu-hkpd">Ortax: Ketentuan PBB-P2 dalam UU HKPD<small>ortax.org</small></a>
+<a href="https://www.hukumonline.com/klinik/a/ketentuan-pembayaran-tarif-pbb-p2-lt62a9ce4867bf6">Hukumonline: Ketentuan pembayaran dan tarif PBB-P2<small>hukumonline.com</small></a>
+<a href="https://accounting.binus.ac.id/2022/12/16/bagaimana-pajak-bumi-dan-bangunan-pedesaaan-dan-perkotaan-pbbp2-berdasarkan-aturan-terbaru-di-uu-hkpd/">Tax Center BINUS: PBB-P2 berdasarkan UU HKPD<small>accounting.binus.ac.id</small></a>
+<a href="https://www.pajak.com/pajak/perubahan-ketentuan-pbb-p2-berdasarkan-undang-undang-no-1-tahun-2022/amp/">Pajak.com: Perubahan ketentuan PBB-P2 berdasarkan UU 1/2022<small>pajak.com</small></a>
+<a href="https://pajakku.com/artikel/pbb-p2-pengertian-objek-dan-cara-hitung">Pajakku: PBB P2, pengertian, objek, dan cara hitung (terbit 2022, sebagian sudah usang)<small>pajakku.com</small></a></div></section>
+</main>
+<footer><div class="w">Ringkasan Materi PBB-P2 berdasarkan UU No. 1 Tahun 2022 (UU HKPD). Selalu cek perda daerah Anda untuk angka yang berlaku.</div></footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
